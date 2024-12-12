@@ -1,0 +1,565 @@
+:root {
+    --primary: #FF5A3C;
+    --dark: #1e1e1e;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark);
+}
+
+/* General Styles */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: #ff4424;
+    border-color: #ff4424;
+}
+
+/* Top Navbar Styles */
+.top-navbar {
+    background-color: var(--dark);
+    color: #f8f9fa;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.top-nav-left, .top-nav-right {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.top-nav-left li {
+    margin-right: 20px;
+}
+
+.top-nav-left i {
+    margin-right: 5px;
+    color: var(--primary);
+}
+
+.top-nav-right {
+    justify-content: flex-end;
+}
+
+.top-nav-right li {
+    margin-left: 15px;
+}
+
+.top-nav-right a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.top-nav-right a:hover {
+    color: var(--primary);
+}
+
+/* Main Navbar Styles */
+.main-navbar {
+    padding: 15px 0;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.95);
+    top: 0px;
+}
+
+.navbar {
+    padding: 20px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: var(--dark) !important;
+    padding: 0 15px !important;
+    line-height: 3;
+}
+
+.nav-link:hover {
+    color: var(--primary) !important;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+}
+
+.carousel-item {
+    height: calc(100vh - 120px);
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Best Apartment Section */
+.featured-icon {
+    position: absolute;
+    padding: 15px 15px 15px 25px;
+    border-radius: 50%;
+    bottom: -15px;
+    left: -25px;
+    color: #fff;
+    background-color: var(--primary);
+}
+
+.img-fluid {
+    margin-bottom: 50px;
+}
+
+/* Video View Section */
+.video-view {
+    background-color: #f8f9fa;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-image-wrapper {
+    margin-top: -3rem;
+    margin-bottom: 3rem;
+}
+
+.background-image-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0 0 20px 20px;
+}
+
+.content-container {
+    position: relative;
+    z-index: 2;
+}
+
+.video-frame-wrapper {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.video-frame-wrapper img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-button:hover {
+    background-color: #ff4424;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Stats Section */
+.stats-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.stats-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.stats-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.stats-text {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.stats-dot {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 12px;
+    height: 12px;
+    background-color: var(--primary);
+    border-radius: 50%;
+}
+
+/* Best Deal Section */
+.best-deal {
+    background-color: #fff;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-buttons .btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+.property-details-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.detail-item:last-child {
+    margin-bottom: 0;
+}
+
+.detail-label {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.detail-value {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.property-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.property-info {
+    padding: 0 0 0 20px;
+}
+
+.property-info h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.property-info p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.schedule-btn {
+    padding: 12px 25px;
+    border-radius: 25px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Features Section */
+.features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: start;
+    gap: 15px;
+}
+
+.feature-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.feature-item h5 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.feature-item p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Property Card */
+.property-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.property-card:hover {
+    transform: translateY(-10px);
+}
+
+.property-info {
+    padding: 20px;
+}
+
+.property-info h5 {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.property-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.luxury-villa {
+    background-color: #ff593ca2;
+    padding: 1px 4px;
+    border-radius: 8%;
+}
+
+/* Contact Form */
+.form-control {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: none;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+    .top-navbar .row > div {
+        text-align: center;
+    }
+
+    .top-nav-left, .top-nav-right {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .navbar {
+        background: white;
+        padding: 15px 0;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .filter-buttons {
+        margin-top: 20px;
+        justify-content: flex-start;
+    }
+
+    .property-info {
+        padding: 10px 10px;
+    }
+
+    .property-details-card {
+        margin-bottom: 20px;
+    }
+
+    .main-navbar {
+        top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .top-nav-left li, .top-nav-right li {
+        font-size: 12px;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .nav-link {
+        padding: 5px 10px !important;
+        line-height: 2;
+    }
+
+    .btn-primary {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    .carousel-item {
+        height: 100vh;
+    }
+
+    .carousel-caption {
+        align-items: flex-start;
+        padding-top: 60px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 28px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 16px;
+    }
+
+    .carousel-caption .btn {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+
+    .img-fluid {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+
+    .featured-icon {
+        bottom: 15px;
+        left: 15px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .stats-card {
+        padding: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .stats-number {
+        font-size: 2rem;
+    }
+
+    .filter-buttons {
+        flex-wrap: wrap;
+    }
+
+    .filter-buttons .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .property-details {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .property-info h4 {
+        font-size: 1.25rem;
+    }
+
+    .property-info p {
+        font-size: 13px;
+    }
+
+    .schedule-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .carousel-caption h1 {
+        font-size: 24px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 14px;
+    }
+
+    .feature-item h5 {
+        font-size: 16px;
+    }
+
+    .feature-item p {
+        font-size: 12px;
+    }
+}
